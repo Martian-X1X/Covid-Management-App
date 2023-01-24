@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covidmanagementfxmlapplication.HeadofLogisticEquipOrderController">
+   <children>
+      <Text layoutX="258.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orders">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="28.0" />
+         </font>
+      </Text>
+      <TableView fx:id="table" layoutX="4.0" layoutY="73.0" prefHeight="220.0" prefWidth="593.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="296.79998779296875" text="Name" />
+          <TableColumn fx:id="quantity" prefWidth="296.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="requestBox" layoutX="127.0" layoutY="299.0" prefWidth="150.0" />
+      <Text layoutX="21.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Supplier:" />
+      <TextArea fx:id="textArea" layoutX="335.0" layoutY="303.0" prefHeight="34.0" prefWidth="150.0" />
+      <Button fx:id="Return" layoutX="500.0" layoutY="345.0" mnemonicParsing="false" onAction="#ReturnOnAction" text="Return" />
+      <Button fx:id="Order" layoutX="164.0" layoutY="345.0" mnemonicParsing="false" onAction="#OrderonClick" text="Order" />
+   </children>
+</AnchorPane>
