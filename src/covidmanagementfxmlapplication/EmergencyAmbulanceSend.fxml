@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covidmanagementfxmlapplication.EmergencyAmbulanceSendController">
+   <children>
+      <Text layoutX="38.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send Ambulance">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField layoutX="86.0" layoutY="83.0" promptText="Enter name here" />
+      <Text layoutX="20.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+      <Text layoutX="15.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number:" />
+      <Text layoutX="15.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" />
+      <TextField layoutX="86.0" layoutY="135.0" promptText="Enter number here" />
+      <TextField layoutX="86.0" layoutY="179.0" promptText="Enter address here" />
+      <Button fx:id="Send" layoutX="279.0" layoutY="263.0" mnemonicParsing="false" onAction="#SendonAction" text="Send" />
+      <TextArea fx:id="textArea" editable="false" layoutX="37.0" layoutY="299.0" prefHeight="48.0" prefWidth="310.0" />
+      <Button fx:id="Return" layoutX="512.0" layoutY="347.0" mnemonicParsing="false" onAction="#ReturnOnAction" text="Return" />
+      <Label layoutX="358.0" layoutY="52.0" text="EMERGENCY" textFill="#057529">
+         <font>
+            <Font name="Bell MT Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="360.0" layoutY="108.0" text="AMBULANCE" textFill="#025e14">
+         <font>
+            <Font name="Bell MT Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="176.0" text="SERVICE" textFill="#036106">
+         <font>
+            <Font name="Bell MT Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

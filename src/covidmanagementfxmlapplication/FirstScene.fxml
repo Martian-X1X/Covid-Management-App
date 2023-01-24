@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covidmanagementfxmlapplication.FirstSceneController">
+   <children>
+      <Label layoutX="156.0" layoutY="25.0" prefHeight="50.0" prefWidth="404.0" text="Covid Management App" textFill="#3905ff">
+         <font>
+            <Font name="Monotype Corsiva" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="186.0" prefHeight="25.0" prefWidth="67.0" text="Email:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="24.0" layoutY="224.0" prefHeight="25.0" prefWidth="75.0" text="Password:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="email" layoutX="100.0" layoutY="186.0" onAction="#emailonAction" promptText="Enter Email here" />
+      <PasswordField fx:id="password" layoutX="100.0" layoutY="224.0" onAction="#passwordonAction" promptText="Password" />
+      <Button fx:id="loginButton" layoutX="162.0" layoutY="298.0" mnemonicParsing="false" onAction="#loginButtononAction" text="Login" />
+      <ComboBox fx:id="departmentComboBox" layoutX="99.0" layoutY="136.0" onAction="#departmentComboBoxonAction" prefWidth="150.0" promptText="Select----" />
+      <ImageView fitHeight="116.0" fitWidth="268.0" layoutX="-41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo%20app.png" />
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="300.0" layoutY="100.0" prefHeight="268.0" prefWidth="288.0" text="Password:&#10;-email: first 4 letters of USER in &#10;small letters@gmail.com&#10;-pass: 00x where x is the position&#10;of the USER in the combobox&#10;&#10;i.e. for Doctor:&#10;-email: doct@gmail.com&#10;-pass: 002 as it is 2nd in the&#10;combobox" />
+   </children>
+</AnchorPane>

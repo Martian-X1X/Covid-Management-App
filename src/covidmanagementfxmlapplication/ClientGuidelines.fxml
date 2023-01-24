@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covidmanagementfxmlapplication.ClientGuidelinesController">
+   <children>
+      <TextArea editable="false" layoutX="18.0" layoutY="86.0" prefHeight="248.0" prefWidth="564.0" text="1. What to do if you were tested positive for COVID-19?&#10;- People who test positive for COVID-19 or those who have symptoms for COVID-19 and are&#10;waiting test results should isolate at home. You should isolate regardless of your vaccination&#10;status. Do not go to work, school, or public areas. Avoid using public transportation,&#10;ridesharing, or taxis. Ask others to do your shopping or use a grocery delivery service.&#10;&#10;Separate as much as possible from others at home by staying in a specific room away from&#10;other people and using a separate bathroom if available. Wear a well-fitting mask when you&#10;need to be around others.&#10;&#10;2. How to properly quarantine/isolate yourself?&#10;- If possible, establish a bedroom and bathroom that will be used only by the sick person. &#10;Assign one healthy family member as the caregiver. This person will help the sick person &#10;follow doctor’s orders, assist with basic needs and monitor symptoms while avoiding making &#10;any unnecessary physical contact or spending more time than necessary in the sick person's &#10;room. All other family members and pets should avoid contact with the sick person.&#10;No visitors should enter the home. Make sure shared spaces have good air flow, either through &#10;open windows or air conditioning.&#10;&#10;The sick person should wear a mask or face covering while the caregiver is in the room. If the sick &#10;person cannot wear a face mask because of breathing problems, the caregiver should wear a &#10;disposable face covering while in the sick person's room and dispose of it after leaving the room.&#10;If the caregiver needs to touch the sick person's bodily fluids, the caregiver should wear a mask and&#10;disposable gloves. Afterward, the caregiver should remove and dispose of gloves first, wash hands, &#10;remove and dispose of mask, and wash hands again.&#10;&#10;3. How you can keep yourself safe from further exposure?&#10;- *Maintain a safe distance from others (at least 1 metre), even if they don’t appear to be sick.&#10;*Wear a mask in public, especially indoors or when physical distancing is not possible.&#10;*Choose open, well-ventilated spaces over closed ones. Open a window if indoors.&#10;*Clean your hands often. Use soap and water, or an alcohol-based hand rub.&#10;*Get vaccinated when it’s your turn. Follow local guidance about vaccination.&#10;*Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.&#10;*Stay home if you feel unwell.">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextArea>
+      <Button fx:id="Return" layoutX="274.0" layoutY="342.0" mnemonicParsing="false" onAction="#ReturnOnAction" text="Return" />
+      <Label layoutX="26.0" layoutY="14.0" prefHeight="45.0" prefWidth="289.0" text="Covid-19 Guidelines:">
+         <font>
+            <Font name="Aldhabi" size="51.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

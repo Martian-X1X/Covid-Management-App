@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covidmanagementfxmlapplication.AdminController">
+   <children>
+      <Label layoutX="265.0" layoutY="32.0" prefHeight="62.0" prefWidth="241.0" text="  Hello HRD">
+         <font>
+            <Font name="Bell MT Bold" size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="updateOnVaccine" layoutX="334.0" layoutY="147.0" mnemonicParsing="false" onAction="#updateOnVaccineonAction" text="Updates on Vaccines" />
+      <Button fx:id="returnBack" layoutX="372.0" layoutY="312.0" mnemonicParsing="false" onAction="#returnBackOnAction" text="Return" />
+      <Button fx:id="totalCases" layoutX="360.0" layoutY="226.0" mnemonicParsing="false" onAction="#totalCasesonAction" text="Total Cases" />
+      <ImageView fitHeight="387.0" fitWidth="263.0" layoutX="14.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1678758.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

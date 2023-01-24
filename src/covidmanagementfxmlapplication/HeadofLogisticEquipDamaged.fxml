@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covidmanagementfxmlapplication.HeadofLogisticEquipDamagedController">
+   <children>
+      <Text layoutX="225.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Damaged">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <TableView fx:id="table" layoutX="8.0" layoutY="65.0" prefHeight="235.0" prefWidth="583.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="294.4000244140625" text="Name" />
+          <TableColumn fx:id="quantity" prefWidth="287.20000000000005" text="Quantity" />
+        </columns>
+      </TableView>
+      <Button fx:id="Return" layoutX="505.0" layoutY="339.0" mnemonicParsing="false" onAction="#returnBackonAction" text="Return" />
+      <Button fx:id="Discard" layoutX="48.0" layoutY="339.0" mnemonicParsing="false" onAction="#DiscardonAction" text="Discard" />
+      <TextArea fx:id="textArea" layoutX="211.0" layoutY="317.0" prefHeight="47.0" prefWidth="178.0" />
+   </children>
+</AnchorPane>

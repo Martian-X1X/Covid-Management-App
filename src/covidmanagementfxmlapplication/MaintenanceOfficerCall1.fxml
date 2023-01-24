@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covidmanagementfxmlapplication.MaintenanceOfficerCall1Controller">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#191a1b" height="186.0" layoutX="87.0" layoutY="35.0" stroke="BLACK" strokeType="INSIDE" width="427.0" />
+            <Text fill="#0cb07f" layoutX="105.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Incoming Call..." wrappingWidth="134.13671875">
+               <font>
+                  <Font name="Constantia" size="19.0" />
+               </font>
+            </Text>
+            <Text fill="#0cb07f" layoutX="226.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+8801756429837" wrappingWidth="148.53668212890625">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="85.0" fitWidth="78.0" layoutX="261.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@149071.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Return" layoutX="274.0" layoutY="353.0" mnemonicParsing="false" onAction="#ReturnOnAction" text="Return" />
+            <Button fx:id="endcall" layoutX="274.0" layoutY="251.0" mnemonicParsing="false" onAction="#EndonClick" text="End Call" />
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#191a1b" height="186.0" layoutX="97.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" width="427.0" />
+      <Text fx:id="text1" fill="#0cb07f" layoutX="115.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ongoing Call..." wrappingWidth="134.13671875">
+         <font>
+            <Font name="Constantia" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#0cb07f" layoutX="236.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+8801756429837" wrappingWidth="148.53668212890625">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="85.0" fitWidth="78.0" layoutX="271.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@149071.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Return" layoutX="284.0" layoutY="363.0" mnemonicParsing="false" onAction="#ReturnOnAction" text="Return" />
+      <Text fx:id="text2" fill="#0cb07f" layoutX="284.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="05:26" wrappingWidth="148.53668212890625">
+         <font>
+            <Font name="Constantia" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

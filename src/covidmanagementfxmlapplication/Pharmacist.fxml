@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="covidmanagementfxmlapplication.PharmacistController">
+   <children>
+      <Label layoutX="131.0" layoutY="43.0" text="Welcome Pharmacist!!" textFill="#ff5900">
+         <font>
+            <Font name="Forte" size="39.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="103.0" fitWidth="114.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pharmacist.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="504.0" layoutY="336.0" mnemonicParsing="false" onAction="#LogoutOnAction" prefHeight="35.0" prefWidth="78.0" text="Logout">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="EnsureMedication" layoutX="243.0" layoutY="174.0" mnemonicParsing="false" onAction="#EnsureMedicationOnAction" text="Ensure Medication" />
+      <Button fx:id="InterpretTestResults" layoutX="238.0" layoutY="222.0" mnemonicParsing="false" onAction="#InterpretTestResultOnAction" text="Interpret Test Result" />
+   </children>
+</AnchorPane>
